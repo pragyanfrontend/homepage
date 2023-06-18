@@ -23,5 +23,46 @@ body{
     width:90%;
     border: 1px solid red;
     margin: auto;
+    padding :20px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
 
+
+
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid saddlebrown ;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+
+    
+    
+
+}
+.navbar ul li a::after{
+    content:"";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    right:2px;
+    bottom: -2px;
+    transition:1.5s ;
+}
+
+ 
+.navbar ul li a:hover::after{
+    width:100%
+    
 }
